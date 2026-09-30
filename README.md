@@ -76,7 +76,7 @@ Progress
 
 ## 🚀 Live Demo
 
-👉 **[View StudyHub Live Demo](https://YOUR-GITHUB-USERNAME.github.io/studyhub/)**
+👉 **[View StudyHub Live Demo]( https://neharapelly.github.io/studyhub/)**
 
 > Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username after enabling GitHub Pages.
 
