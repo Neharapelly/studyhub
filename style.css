@@ -1,0 +1,904 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.header {
+    height: 70px;
+    border-bottom: 2px solid #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: #ffffff;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   COMMON
+========================= */
+
+main {
+    min-height: 80vh;
+}
+
+.section {
+    padding: 70px 8%;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #111111;
+    color: #ffffff;
+    border: 2px solid #111111;
+    padding: 11px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ffffff;
+    color: #111111;
+}
+
+.button.small {
+    padding: 8px 14px;
+    margin-top: 10px;
+}
+
+.button.full {
+    width: 100%;
+    text-align: center;
+}
+
+.outline-button {
+    display: inline-block;
+    background: #ffffff;
+    color: #111111;
+    border: 2px solid #111111;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.outline-button:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
+.placeholder {
+    height: 12px;
+    width: 100%;
+    background: #dddddd;
+    margin-bottom: 15px;
+}
+
+.placeholder.short {
+    width: 100px;
+}
+
+.image-placeholder,
+.thumbnail,
+.course-image,
+.video-placeholder {
+    background: #eeeeee;
+    border: 2px dashed #777777;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+    min-height: 520px;
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    border-bottom: 2px solid #111111;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 500px;
+    color: #444444;
+    margin-bottom: 25px;
+}
+
+.hero .image-placeholder {
+    height: 330px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    border: 2px solid #111111;
+    padding: 18px;
+    background: #ffffff;
+}
+
+.course-card .thumbnail {
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.course-card p {
+    font-size: 12px;
+    color: #555555;
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-box,
+.quick-card,
+.achievement-box {
+    border: 2px solid #111111;
+    padding: 25px;
+    background: #ffffff;
+}
+
+.feature-box h3,
+.quick-card h3,
+.achievement-box h3 {
+    margin: 15px 0 8px;
+}
+
+.feature-box p,
+.quick-card p,
+.achievement-box p {
+    color: #555555;
+    font-size: 13px;
+}
+
+.icon-placeholder,
+.achievement-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.center-page {
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.login-box {
+    width: 430px;
+    border: 2px solid #111111;
+    padding: 40px;
+    background: #ffffff;
+}
+
+.login-box h1 {
+    margin-bottom: 5px;
+}
+
+.login-box > p {
+    color: #555555;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    height: 42px;
+    border: 1px solid #777777;
+    padding: 10px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+.remember-row {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-row label {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.remember-row a {
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    color: #777777;
+    font-size: 12px;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-header,
+.progress-header {
+    padding: 60px 8% 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header p,
+.progress-header p {
+    color: #666666;
+    font-size: 13px;
+}
+
+.dashboard-header h1,
+.progress-header h1 {
+    font-size: 36px;
+}
+
+.profile-placeholder {
+    width: 70px;
+    height: 70px;
+    border: 2px dashed #777777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.stats-grid {
+    padding: 20px 8% 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-box {
+    border: 2px solid #111111;
+    padding: 25px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 30px;
+}
+
+.stat-box p {
+    font-size: 11px;
+    color: #555555;
+}
+
+.section-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-title-row h2 {
+    margin: 0;
+}
+
+.section-title-row a {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.learning-card {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 25px;
+    border: 2px solid #111111;
+    padding: 20px;
+}
+
+.thumbnail.large {
+    height: 190px;
+}
+
+.learning-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.learning-info p {
+    font-size: 13px;
+    color: #555555;
+}
+
+.learning-info .button {
+    margin-top: 15px;
+}
+
+.quick-card .outline-button {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   COURSE
+========================= */
+
+.course-hero {
+    padding: 70px 8%;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 60px;
+    border-bottom: 2px solid #111111;
+}
+
+.course-image {
+    height: 320px;
+}
+
+.course-information h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.course-information > p {
+    color: #555555;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.course-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.course-meta span {
+    border: 1px solid #777777;
+    padding: 8px 12px;
+    font-size: 11px;
+}
+
+.description {
+    max-width: 800px;
+    color: #555555;
+}
+
+.lesson-list {
+    border: 2px solid #111111;
+}
+
+.lesson-item {
+    display: grid;
+    grid-template-columns: 50px 1fr 40px;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid #777777;
+}
+
+.lesson-item:last-child {
+    border-bottom: none;
+}
+
+.lesson-item > span {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.lesson-item strong {
+    display: block;
+    font-size: 14px;
+}
+
+.lesson-item small {
+    color: #666666;
+    font-size: 11px;
+}
+
+
+/* =========================
+   LESSON
+========================= */
+
+.lesson-layout {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 35px;
+}
+
+.video-placeholder {
+    height: 450px;
+    flex-direction: column;
+}
+
+.video-placeholder span {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #111111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.video-placeholder p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.lesson-main h1 {
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.lesson-main > p {
+    color: #666666;
+    font-size: 12px;
+}
+
+.lesson-description {
+    margin-top: 30px;
+    border-top: 1px solid #777777;
+    padding-top: 25px;
+}
+
+.lesson-description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lesson-description p {
+    color: #555555;
+    font-size: 13px;
+}
+
+.lesson-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.lesson-sidebar {
+    border: 2px solid #111111;
+    padding: 20px;
+    align-self: start;
+}
+
+.lesson-sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.side-lesson {
+    display: flex;
+    gap: 12px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #999999;
+}
+
+.side-lesson:last-child {
+    border-bottom: none;
+}
+
+.side-lesson > span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.side-lesson strong {
+    display: block;
+    font-size: 11px;
+}
+
+.side-lesson small {
+    color: #666666;
+    font-size: 9px;
+}
+
+.side-lesson.active {
+    background: #eeeeee;
+}
+
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz-container {
+    max-width: 850px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.quiz-header p {
+    color: #666666;
+    font-size: 12px;
+}
+
+.quiz-header h1 {
+    font-size: 28px;
+}
+
+.quiz-progress {
+    border: 1px solid #777777;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.question-card {
+    border: 2px solid #111111;
+    padding: 35px;
+}
+
+.question-card h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.answer-option {
+    display: block;
+    border: 1px solid #777777;
+    padding: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.answer-option:hover {
+    background: #eeeeee;
+}
+
+.answer-option input {
+    margin-right: 10px;
+}
+
+.quiz-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-overview {
+    margin: 0 8% 50px;
+    border: 2px solid #111111;
+    padding: 35px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.progress-circle {
+    width: 160px;
+    height: 160px;
+    border: 12px solid #222222;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-circle strong {
+    font-size: 30px;
+}
+
+.progress-circle span {
+    font-size: 10px;
+}
+
+.progress-details {
+    flex: 1;
+}
+
+.progress-details h2 {
+    font-size: 25px;
+}
+
+.progress-details p {
+    color: #555555;
+    font-size: 13px;
+}
+
+.progress-bar {
+    height: 12px;
+    border: 1px solid #555555;
+    margin: 12px 0;
+    background: #ffffff;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: #222222;
+}
+
+.progress-bar.large {
+    height: 16px;
+}
+
+.progress-course {
+    border: 2px solid #111111;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr auto;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.progress-course .thumbnail {
+    height: 100px;
+}
+
+.progress-course-info h3 {
+    margin-bottom: 8px;
+}
+
+.progress-course-info p {
+    font-size: 11px;
+    color: #555555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-top: 2px solid #111111;
+    padding: 25px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+footer p {
+    font-size: 11px;
+    color: #555555;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 0 4%;
+    }
+
+    .header nav {
+        gap: 12px;
+    }
+
+    .hero,
+    .course-hero,
+    .lesson-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid,
+    .three-column,
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .learning-card {
+        grid-template-columns: 1fr;
+    }
+
+    .progress-course {
+        grid-template-columns: 100px 1fr;
+    }
+
+    .progress-course .outline-button {
+        grid-column: 2;
+    }
+
+    .lesson-sidebar {
+        order: -1;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        height: auto;
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .card-grid,
+    .three-column,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header,
+    .progress-header {
+        padding: 40px 5% 20px;
+    }
+
+    .dashboard-header h1,
+    .progress-header h1 {
+        font-size: 28px;
+    }
+
+    .course-hero {
+        padding: 50px 5%;
+    }
+
+    .course-information h1 {
+        font-size: 30px;
+    }
+
+    .lesson-layout {
+        padding: 40px 5%;
+    }
+
+    .video-placeholder {
+        height: 280px;
+    }
+
+    .quiz-container {
+        padding: 50px 15px;
+    }
+
+    .quiz-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .progress-overview {
+        margin: 0 5% 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .progress-course {
+        grid-template-columns: 1fr;
+    }
+
+    .progress-course .outline-button {
+        grid-column: auto;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 25px;
+    }
+}
