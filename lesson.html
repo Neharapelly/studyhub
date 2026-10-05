@@ -1,119 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>StudyHub - Lesson</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Lesson Wireframe</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <main class="lesson-page">
+<header class="header">
 
-        <!-- Header -->
+    <div class="logo">STUDYHUB</div>
 
-        <header class="lesson-header">
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="course.html">Course</a>
+        <a href="progress.html">Progress</a>
+    </nav>
 
-            <a href="course.html" class="back-button">
-                ←
-            </a>
+</header>
 
-            <h1>Lesson 4</h1>
+<main>
 
-        </header>
+    <section class="lesson-layout">
 
+        <div class="lesson-main">
 
-        <!-- Lesson Title -->
+            <div class="video-placeholder">
+                <span>▶</span>
+                <p>VIDEO / LESSON CONTENT</p>
+            </div>
 
-        <section class="lesson-content">
+            <h1>Introduction to UI/UX Design</h1>
 
-            <h2>Understanding Flexbox</h2>
-
-            <p class="lesson-description">
-                Learn how CSS Flexbox helps you create
-                flexible and responsive layouts.
+            <p>
+                Lesson 01 • 20 minutes
             </p>
 
+            <div class="lesson-description">
 
-            <!-- Video Area -->
+                <h2>About this lesson</h2>
 
-            <div class="video-box">
-
-                <div class="play-button">
-                    ▶
-                </div>
-
-                <p>Lesson Video</p>
+                <p>
+                    Learn the basic concepts of user interface
+                    and user experience design and understand
+                    how they are used to create better products.
+                </p>
 
             </div>
 
+            <div class="lesson-actions">
 
-            <!-- Lesson Text -->
+                <a href="course.html" class="outline-button">
+                    ← Previous
+                </a>
 
-            <article>
+                <a href="quiz.html" class="button">
+                    Continue →
+                </a>
 
-                <h2>What is Flexbox?</h2>
+            </div>
 
-                <p>
-                    Flexbox is a CSS layout system that
-                    helps you arrange elements easily
-                    in rows or columns.
-                </p>
-
-                <p>
-                    It is especially useful when creating
-                    responsive websites that work on
-                    different screen sizes.
-                </p>
-
-                <h3>Important Concepts</h3>
-
-                <ul>
-
-                    <li>Flex Container</li>
-
-                    <li>Flex Items</li>
-
-                    <li>Justify Content</li>
-
-                    <li>Align Items</li>
-
-                </ul>
-
-            </article>
+        </div>
 
 
-            <!-- Complete Lesson -->
+        <aside class="lesson-sidebar">
 
-            <button onclick="completeLesson()">
-                Mark Lesson Complete
-            </button>
+            <h3>Course Content</h3>
 
-        </section>
+            <div class="side-lesson active">
+                <span>01</span>
+                <div>
+                    <strong>Introduction</strong>
+                    <small>20 min</small>
+                </div>
+            </div>
 
-    </main>
+            <div class="side-lesson">
+                <span>02</span>
+                <div>
+                    <strong>User Research</strong>
+                    <small>25 min</small>
+                </div>
+            </div>
 
+            <div class="side-lesson">
+                <span>03</span>
+                <div>
+                    <strong>Wireframing</strong>
+                    <small>30 min</small>
+                </div>
+            </div>
 
-    <script>
+            <div class="side-lesson">
+                <span>04</span>
+                <div>
+                    <strong>Prototyping</strong>
+                    <small>35 min</small>
+                </div>
+            </div>
 
-        function completeLesson() {
+        </aside>
 
-            alert("Lesson completed! 🎉");
+    </section>
 
-            window.location.href = "quiz.html";
+</main>
 
-        }
-
-    </script>
+<footer>
+    <p>StudyHub Lesson Wireframe</p>
+</footer>
 
 </body>
-
 </html>

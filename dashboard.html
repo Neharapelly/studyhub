@@ -1,277 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>StudyHub - Dashboard</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Dashboard Wireframe</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <main class="dashboard">
+<header class="header">
 
-        <!-- Top Navigation -->
+    <div class="logo">STUDYHUB</div>
 
-        <header class="top-nav">
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="course.html">Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="index.html">Logout</a>
+    </nav>
 
-            <div class="brand">
-                🎓 StudyHub
+</header>
+
+<main>
+
+    <section class="dashboard-header">
+
+        <div>
+            <p>Welcome back!</p>
+            <h1>Student Dashboard</h1>
+        </div>
+
+        <div class="profile-placeholder">
+            PROFILE
+        </div>
+
+    </section>
+
+
+    <section class="stats-grid">
+
+        <div class="stat-box">
+            <h3>04</h3>
+            <p>Courses</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>12</h3>
+            <p>Lessons Completed</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>75%</h3>
+            <p>Overall Progress</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>03</h3>
+            <p>Certificates</p>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-title-row">
+            <h2>Continue Learning</h2>
+            <a href="course.html">View All</a>
+        </div>
+
+        <div class="learning-card">
+
+            <div class="thumbnail large">
+                COURSE IMAGE
             </div>
 
-            <div class="profile">
-                👤
-            </div>
+            <div class="learning-info">
 
-        </header>
+                <h3>UI/UX Design Fundamentals</h3>
 
-
-        <!-- Welcome -->
-
-        <section class="welcome-section">
-
-            <div>
-
-                <p class="small-text">
-                    Welcome back 👋
+                <p>
+                    Continue from where you stopped.
                 </p>
 
-                <h1>
-                    Keep Learning, Student!
-                </h1>
+                <div class="progress-bar">
+                    <span style="width: 65%;"></span>
+                </div>
 
-                <p class="welcome-text">
-                    Continue your learning journey today.
-                </p>
+                <p>65% Completed</p>
+
+                <a href="lesson.html" class="button">
+                    Continue Learning
+                </a>
 
             </div>
-
-        </section>
-
-
-        <!-- Search -->
-
-        <div class="search-box">
-
-            🔍
-
-            <input
-                type="text"
-                placeholder="Search courses..."
-            >
 
         </div>
 
-
-        <!-- My Courses -->
-
-        <section class="courses-section">
-
-            <div class="section-title">
-
-                <h2>My Courses</h2>
-
-                <span>
-                    2 Courses
-                </span>
-
-            </div>
+    </section>
 
 
-            <!-- HTML & CSS -->
+    <section class="section">
 
-            <div class="course-card">
+        <h2>Quick Learning</h2>
 
-                <div class="course-icon html-icon">
-                    🌐
-                </div>
+        <div class="three-column">
 
-                <div class="course-info">
-
-                    <h3>
-                        HTML & CSS
-                    </h3>
-
-                    <p>
-                        Learn web development fundamentals.
-                    </p>
-
-                    <div class="progress-bar">
-
-                        <div class="progress html-progress">
-                        </div>
-
-                    </div>
-
-                    <div class="course-bottom">
-
-                        <span>
-                            70% Complete
-                        </span>
-
-                        <a href="course.html"
-                           class="course-button">
-
-                            Continue
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- JavaScript -->
-
-            <div class="course-card">
-
-                <div class="course-icon js-icon">
-                    💻
-                </div>
-
-                <div class="course-info">
-
-                    <h3>
-                        JavaScript
-                    </h3>
-
-                    <p>
-                        Learn programming and interactive websites.
-                    </p>
-
-                    <div class="progress-bar">
-
-                        <div class="progress js-progress">
-                        </div>
-
-                    </div>
-
-                    <div class="course-bottom">
-
-                        <span>
-                            40% Complete
-                        </span>
-
-                        <a href="#"
-                           class="course-button">
-
-                            Continue
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Quick Learning -->
-
-        <section class="quick-section">
-
-            <div class="section-title">
-
-                <h2>Quick Learning</h2>
-
-            </div>
-
-
-            <div class="quick-cards">
-
-                <a href="lesson.html"
-                   class="quick-card">
-
-                    <div class="quick-icon">
-                        📖
-                    </div>
-
-                    <h3>
-                        Lessons
-                    </h3>
-
-                    <p>
-                        Continue learning
-                    </p>
-
+            <div class="quick-card">
+                <div class="icon-placeholder">▶</div>
+                <h3>Lessons</h3>
+                <p>Continue your lessons.</p>
+                <a href="lesson.html" class="outline-button">
+                    Open
                 </a>
-
-
-                <a href="quiz.html"
-                   class="quick-card">
-
-                    <div class="quick-icon">
-                        📝
-                    </div>
-
-                    <h3>
-                        Quiz
-                    </h3>
-
-                    <p>
-                        Test your knowledge
-                    </p>
-
-                </a>
-
-
-                <a href="progress.html"
-                   class="quick-card">
-
-                    <div class="quick-icon">
-                        📊
-                    </div>
-
-                    <h3>
-                        Progress
-                    </h3>
-
-                    <p>
-                        View your progress
-                    </p>
-
-                </a>
-
             </div>
 
-        </section>
-
-
-        <!-- Daily Goal -->
-
-        <section class="goal-card">
-
-            <div>
-
-                <h2>
-                    🎯 Daily Learning Goal
-                </h2>
-
-                <p>
-                    You've completed 3 of 5 lessons today.
-                </p>
-
+            <div class="quick-card">
+                <div class="icon-placeholder">?</div>
+                <h3>Quiz</h3>
+                <p>Test your knowledge.</p>
+                <a href="quiz.html" class="outline-button">
+                    Start Quiz
+                </a>
             </div>
 
-            <strong>
-                60%
-            </strong>
+            <div class="quick-card">
+                <div class="icon-placeholder">%</div>
+                <h3>Progress</h3>
+                <p>Check your progress.</p>
+                <a href="progress.html" class="outline-button">
+                    View Progress
+                </a>
+            </div>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
+
+</main>
+
+<footer>
+    <p>StudyHub Dashboard Wireframe</p>
+</footer>
 
 </body>
-
 </html>

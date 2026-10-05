@@ -1,160 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>StudyHub - Course</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Course Details Wireframe</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <main class="course-page">
+<header class="header">
 
-        <!-- Header -->
+    <div class="logo">STUDYHUB</div>
 
-        <header class="course-header">
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="course.html">Courses</a>
+        <a href="progress.html">Progress</a>
+    </nav>
 
-            <a href="dashboard.html" class="back-button">
-                ←
-            </a>
+</header>
 
-            <h1>HTML & CSS</h1>
+<main>
 
-        </header>
+    <section class="course-hero">
 
+        <div class="course-image">
+            COURSE IMAGE
+        </div>
 
-        <!-- Course Information -->
+        <div class="course-information">
 
-        <section class="course-intro">
+            <div class="placeholder short"></div>
 
-            <div class="large-course-icon">
-                🌐
-            </div>
-
-            <h2>HTML & CSS Fundamentals</h2>
+            <h1>UI/UX Design Fundamentals</h1>
 
             <p>
-                Learn the basics of web development
-                and create beautiful websites.
+                Learn the fundamentals of user interface and
+                user experience design.
             </p>
 
-            <div class="course-details">
+            <div class="course-meta">
 
-                <span>📚 12 Lessons</span>
-
-                <span>⏱️ 6 Hours</span>
-
-                <span>⭐ Beginner</span>
+                <span>★ 4.8 Rating</span>
+                <span>20 Lessons</span>
+                <span>6 Hours</span>
 
             </div>
 
-        </section>
+            <a href="lesson.html" class="button">
+                Start Learning
+            </a>
+
+        </div>
+
+    </section>
 
 
-        <!-- Progress -->
+    <section class="section">
 
-        <section class="course-progress">
+        <h2>Course Description</h2>
 
-            <h2>Your Progress</h2>
+        <p class="description">
+            This course introduces students to the basic
+            principles of UI/UX design. You will learn about
+            wireframing, visual design, user research,
+            prototyping, and usability.
+        </p>
 
-            <div class="progress-bar">
-
-                <div class="progress html-progress">
-                </div>
-
-            </div>
-
-            <p>70% Complete</p>
-
-        </section>
+    </section>
 
 
-        <!-- Lessons -->
+    <section class="section">
 
-        <section class="lessons">
+        <h2>Course Lessons</h2>
 
-            <h2>Course Lessons</h2>
+        <div class="lesson-list">
 
-
-            <div class="lesson completed">
-
-                <span>✓</span>
-
+            <div class="lesson-item">
+                <span>01</span>
                 <div>
-                    <h3>1. Introduction to HTML</h3>
-                    <p>Completed</p>
+                    <strong>Introduction to UI/UX</strong>
+                    <small>20 minutes</small>
                 </div>
-
+                <span>▶</span>
             </div>
 
-
-            <div class="lesson completed">
-
-                <span>✓</span>
-
+            <div class="lesson-item">
+                <span>02</span>
                 <div>
-                    <h3>2. HTML Basics</h3>
-                    <p>Completed</p>
+                    <strong>User Research</strong>
+                    <small>25 minutes</small>
                 </div>
-
+                <span>▶</span>
             </div>
 
-
-            <div class="lesson completed">
-
-                <span>✓</span>
-
+            <div class="lesson-item">
+                <span>03</span>
                 <div>
-                    <h3>3. CSS Basics</h3>
-                    <p>Completed</p>
+                    <strong>Wireframing</strong>
+                    <small>30 minutes</small>
                 </div>
-
+                <span>▶</span>
             </div>
 
-
-            <div class="lesson">
-
-                <span>4</span>
-
+            <div class="lesson-item">
+                <span>04</span>
                 <div>
-                    <h3>4. Flexbox</h3>
-                    <p>Not Started</p>
+                    <strong>Prototyping</strong>
+                    <small>35 minutes</small>
                 </div>
-
+                <span>▶</span>
             </div>
 
-
-            <div class="lesson">
-
-                <span>5</span>
-
+            <div class="lesson-item">
+                <span>05</span>
                 <div>
-                    <h3>5. Responsive Design</h3>
-                    <p>Not Started</p>
+                    <strong>Usability Testing</strong>
+                    <small>25 minutes</small>
                 </div>
-
+                <span>▶</span>
             </div>
 
-        </section>
+        </div>
 
+    </section>
 
-        <!-- Continue Button -->
+</main>
 
-        <a href="lesson.html"
-           class="start-button continue-button">
-
-            Continue Learning
-
-        </a>
-
-    </main>
+<footer>
+    <p>StudyHub Course Details Wireframe</p>
+</footer>
 
 </body>
-
 </html>

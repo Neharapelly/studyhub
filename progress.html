@@ -1,110 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>StudyHub - Progress</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Progress Wireframe</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <main class="progress-page">
+<header class="header">
 
-        <div class="success-icon">
-            🎉
+    <div class="logo">STUDYHUB</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="course.html">Courses</a>
+        <a href="index.html">Logout</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="progress-header">
+
+        <div>
+            <p>Your Learning</p>
+            <h1>Progress</h1>
         </div>
 
-        <h1>Great Job!</h1>
+        <div class="profile-placeholder">
+            PROFILE
+        </div>
 
-        <p class="success-text">
-            You completed the lesson and quiz.
-        </p>
+    </section>
 
 
-        <!-- Overall Progress -->
+    <section class="progress-overview">
 
-        <section class="progress-card">
+        <div class="progress-circle">
+            <strong>75%</strong>
+            <span>Overall</span>
+        </div>
 
-            <h2>Your Progress</h2>
+        <div class="progress-details">
 
-            <div class="big-progress">
-
-                <div class="big-progress-fill">
-                </div>
-
-            </div>
-
-            <h3>80% Complete</h3>
+            <h2>Great Progress!</h2>
 
             <p>
-                Keep learning and reach your goal!
+                Keep learning to complete your courses.
             </p>
 
-        </section>
-
-
-        <!-- Quiz Result -->
-
-        <section class="result-card">
-
-            <h2>Quiz Result</h2>
-
-            <div class="score">
-                4 / 5
+            <div class="progress-bar large">
+                <span style="width: 75%;"></span>
             </div>
 
-            <p>Correct Answers</p>
+            <p>15 of 20 lessons completed</p>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <!-- Course Status -->
+    <section class="section">
 
-        <section class="completed-card">
+        <h2>Course Progress</h2>
 
-            <div class="check-icon">
-                ✓
+        <div class="progress-course">
+
+            <div class="thumbnail">
+                IMAGE
             </div>
 
-            <div>
+            <div class="progress-course-info">
 
-                <h3>HTML & CSS</h3>
+                <h3>UI/UX Design Fundamentals</h3>
 
-                <p>
-                    Course in progress
-                </p>
+                <div class="progress-bar">
+                    <span style="width: 75%;"></span>
+                </div>
+
+                <p>75% completed</p>
 
             </div>
 
-        </section>
+            <a href="lesson.html" class="outline-button">
+                Continue
+            </a>
+
+        </div>
 
 
-        <!-- Buttons -->
+        <div class="progress-course">
 
-        <a href="dashboard.html"
-           class="start-button progress-button">
+            <div class="thumbnail">
+                IMAGE
+            </div>
 
-            Back to Dashboard
+            <div class="progress-course-info">
 
-        </a>
+                <h3>Web Development</h3>
 
-        <a href="course.html"
-           class="secondary-button">
+                <div class="progress-bar">
+                    <span style="width: 45%;"></span>
+                </div>
 
-            Continue Learning
+                <p>45% completed</p>
 
-        </a>
+            </div>
 
-    </main>
+            <a href="course.html" class="outline-button">
+                Continue
+            </a>
+
+        </div>
+
+
+        <div class="progress-course">
+
+            <div class="thumbnail">
+                IMAGE
+            </div>
+
+            <div class="progress-course-info">
+
+                <h3>Python Programming</h3>
+
+                <div class="progress-bar">
+                    <span style="width: 30%;"></span>
+                </div>
+
+                <p>30% completed</p>
+
+            </div>
+
+            <a href="course.html" class="outline-button">
+                Continue
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Achievements</h2>
+
+        <div class="three-column">
+
+            <div class="achievement-box">
+                <div class="achievement-icon">★</div>
+                <h3>First Course</h3>
+                <p>Completed your first course.</p>
+            </div>
+
+            <div class="achievement-box">
+                <div class="achievement-icon">✓</div>
+                <h3>Quiz Master</h3>
+                <p>Completed 5 quizzes.</p>
+            </div>
+
+            <div class="achievement-box">
+                <div class="achievement-icon">10</div>
+                <h3>10 Lessons</h3>
+                <p>Completed 10 lessons.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>StudyHub Progress Wireframe</p>
+</footer>
 
 </body>
-
 </html>

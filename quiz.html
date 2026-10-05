@@ -1,98 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>StudyHub - Quiz</title>
-
+    <title>StudyHub - Quiz Wireframe</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <main class="quiz-page">
+<header class="header">
 
-        <header class="quiz-header">
+    <div class="logo">STUDYHUB</div>
 
-            <a href="lesson.html" class="back-button">←</a>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="lesson.html">Lesson</a>
+        <a href="progress.html">Progress</a>
+    </nav>
 
-            <h1>Quiz</h1>
+</header>
 
-        </header>
+<main>
 
-        <section class="quiz-card">
+    <section class="quiz-container">
 
-            <p class="question-number">
+        <div class="quiz-header">
+
+            <div>
+                <p>UI/UX Design Fundamentals</p>
+                <h1>Lesson 01 Quiz</h1>
+            </div>
+
+            <div class="quiz-progress">
                 Question 1 of 5
-            </p>
+            </div>
+
+        </div>
+
+
+        <div class="question-card">
 
             <h2>
-                What is CSS mainly used for?
+                What does UX stand for?
             </h2>
 
-            <label class="option">
-                <input type="radio" name="answer" value="wrong">
-                Creating website structure
+            <label class="answer-option">
+                <input type="radio" name="answer">
+                <span>A. User Experience</span>
             </label>
 
-            <label class="option">
-                <input type="radio" name="answer" value="correct">
-                Styling a webpage
+            <label class="answer-option">
+                <input type="radio" name="answer">
+                <span>B. User Example</span>
             </label>
 
-            <label class="option">
-                <input type="radio" name="answer" value="wrong">
-                Creating databases
+            <label class="answer-option">
+                <input type="radio" name="answer">
+                <span>C. User Extension</span>
             </label>
 
-            <label class="option">
-                <input type="radio" name="answer" value="wrong">
-                Sending emails
+            <label class="answer-option">
+                <input type="radio" name="answer">
+                <span>D. User Experiment</span>
             </label>
 
-            <button onclick="checkAnswer()">
-                Submit Answer
-            </button>
+        </div>
 
-        </section>
 
-    </main>
+        <div class="quiz-actions">
 
-    <script>
+            <a href="lesson.html" class="outline-button">
+                Previous
+            </a>
 
-        function checkAnswer() {
+            <a href="progress.html" class="button">
+                Submit Quiz
+            </a>
 
-            const answer =
-                document.querySelector(
-                    'input[name="answer"]:checked'
-                );
+        </div>
 
-            if (!answer) {
+    </section>
 
-                alert("Please select an answer.");
+</main>
 
-                return;
-
-            }
-
-            if (answer.value === "correct") {
-
-                alert("Correct! 🎉");
-
-                window.location.href = "progress.html";
-
-            } else {
-
-                alert("Incorrect. Try again!");
-
-            }
-
-        }
-
-    </script>
+<footer>
+    <p>StudyHub Quiz Wireframe</p>
+</footer>
 
 </body>
-
 </html>
