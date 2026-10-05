@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyHub - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <div class="login-card">
+
+            <div class="logo">🎓</div>
+
+            <h1>Welcome Back</h1>
+
+            <p>Login to continue learning with StudyHub.</p>
+
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+            >
+
+            <button onclick="login()">
+                Login
+            </button>
+
+            <p>
+                <a href="#">Forgot Password?</a>
+            </p>
+
+        </div>
+
+    </main>
+
+    <script>
+        function login() {
+            window.location.href = "dashboard.html";
+        }
+    </script>
+
+</body>
+
+</html>

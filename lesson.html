@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudyHub - Lesson</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="lesson-page">
+
+        <!-- Header -->
+
+        <header class="lesson-header">
+
+            <a href="course.html" class="back-button">
+                ←
+            </a>
+
+            <h1>Lesson 4</h1>
+
+        </header>
+
+
+        <!-- Lesson Title -->
+
+        <section class="lesson-content">
+
+            <h2>Understanding Flexbox</h2>
+
+            <p class="lesson-description">
+                Learn how CSS Flexbox helps you create
+                flexible and responsive layouts.
+            </p>
+
+
+            <!-- Video Area -->
+
+            <div class="video-box">
+
+                <div class="play-button">
+                    ▶
+                </div>
+
+                <p>Lesson Video</p>
+
+            </div>
+
+
+            <!-- Lesson Text -->
+
+            <article>
+
+                <h2>What is Flexbox?</h2>
+
+                <p>
+                    Flexbox is a CSS layout system that
+                    helps you arrange elements easily
+                    in rows or columns.
+                </p>
+
+                <p>
+                    It is especially useful when creating
+                    responsive websites that work on
+                    different screen sizes.
+                </p>
+
+                <h3>Important Concepts</h3>
+
+                <ul>
+
+                    <li>Flex Container</li>
+
+                    <li>Flex Items</li>
+
+                    <li>Justify Content</li>
+
+                    <li>Align Items</li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- Complete Lesson -->
+
+            <button onclick="completeLesson()">
+                Mark Lesson Complete
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        function completeLesson() {
+
+            alert("Lesson completed! 🎉");
+
+            window.location.href = "quiz.html";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

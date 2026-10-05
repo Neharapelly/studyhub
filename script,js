@@ -1,0 +1,18 @@
+const getStartedBtn = document.getElementById("getStartedBtn");
+
+if (getStartedBtn) {
+    getStartedBtn.addEventListener("click", function () {
+        window.location.href = "login.html";
+    });
+}
+
+
+const loginForm = document.getElementById("loginForm");
+
+if (loginForm) {
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        window.location.href = "dashboard.html";
+    });
+}

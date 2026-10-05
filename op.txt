@@ -1,0 +1,11 @@
+file:///C:/Users/Admin/Desktop/studyhub/index.html
+file:///C:/Users/Admin/Desktop/studyhub/dashboard.html#
+file:///C:/Users/Admin/Desktop/studyhub/dashboard.html
+file:///C:/Users/Admin/Desktop/studyhub/index.html
+file:///C:/Users/Admin/Desktop/studyhub/login.html
+file:///C:/Users/Admin/Desktop/studyhub/dashboard.html
+file:///C:/Users/Admin/Desktop/studyhub/course.html
+file:///C:/Users/Admin/Desktop/studyhub/lesson.html
+file:///C:/Users/Admin/Desktop/studyhub/lesson.html
+file:///C:/Users/Admin/Desktop/studyhub/quiz.html
+file:///C:/Users/Admin/Desktop/studyhub/progress.html

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyHub - Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-page">
+
+        <header class="quiz-header">
+
+            <a href="lesson.html" class="back-button">←</a>
+
+            <h1>Quiz</h1>
+
+        </header>
+
+        <section class="quiz-card">
+
+            <p class="question-number">
+                Question 1 of 5
+            </p>
+
+            <h2>
+                What is CSS mainly used for?
+            </h2>
+
+            <label class="option">
+                <input type="radio" name="answer" value="wrong">
+                Creating website structure
+            </label>
+
+            <label class="option">
+                <input type="radio" name="answer" value="correct">
+                Styling a webpage
+            </label>
+
+            <label class="option">
+                <input type="radio" name="answer" value="wrong">
+                Creating databases
+            </label>
+
+            <label class="option">
+                <input type="radio" name="answer" value="wrong">
+                Sending emails
+            </label>
+
+            <button onclick="checkAnswer()">
+                Submit Answer
+            </button>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        function checkAnswer() {
+
+            const answer =
+                document.querySelector(
+                    'input[name="answer"]:checked'
+                );
+
+            if (!answer) {
+
+                alert("Please select an answer.");
+
+                return;
+
+            }
+
+            if (answer.value === "correct") {
+
+                alert("Correct! 🎉");
+
+                window.location.href = "progress.html";
+
+            } else {
+
+                alert("Incorrect. Try again!");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
